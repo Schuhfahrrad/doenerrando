@@ -14,6 +14,8 @@
 <body>
     <h1>Menu</h1>
     <h2>Heisse Speisen</h2>
+    <input class="suchfeld" type="text" id="searchBox" placeholder="Suche nach Koestlichkeiten..."
+
     <img src="images/doenermann.jpeg" alt="Doener" style="width:200px;height:auto;">
     <ul>
         <div class="swiper menu-swiper" style="width:250px;">
@@ -21,7 +23,7 @@
                 <div class="swiper-slide">
                     <img src="images/pizza.jpg" alt="Pizza" style="width:100px;height:auto;">
                     <h3>Pizza</h3>
-                    <ol>
+                    <ul class="food-list">
                         <li>Margherita</li>
                         <li>Salami</li>
                         <li>Funghi</li>
@@ -30,41 +32,55 @@
                         <li>Diavolo</li>
                         <li>Hawaii</li>
                         <li>Vegetariana</li>
-                    </ol>
+                    </ul>
                 </div>
                 <!--Doener Slide-->
                 <div class="swiper-slide">
                     <img src="images/Doener.jpeg" alt="Doener" style="width:100px;height:auto;">
                     <h3>Doener</h3>
-                    <ol start="8">
-                        <li>Doener Classic</li>
+                    <ul class="food-list">
+                        <li>Doener Klassik</li>
                         <li>Doener Spezial</li>
                         <li>Doener Vegetarisch</li>
                         <li>Doener Dürüm</li>
                         <li>Doener Box</li>
-                    </ol>
+                    </ul>
                 </div>
                 <!--Burger Slide-->
                 <div class="swiper-slide">
                     <img src="images/burger.jpg" alt="Burger" style="width:100px;height:auto;">
                     <h3>Burger</h3>
-                    <ol start="13">
+                    <ul class="food-list">
                         <li>Classic Burger</li>
                         <li>Cheeseburger</li>
                         <li>Bacon Burger</li>
                         <li>Chicken Burger</li>
                         <li>Veggie Burger</li>
-                    </ol>
+                    </ul>
+                </div>
+                <!--Lasagne Slide-->
+                <div class="swiper-slide">
+                    <img src="images/lasagne.jpg" alt="Lasagne" style="width:100px;height:auto;">
+                    <h3>Ueberbackenes</h3>
+                    <ul class="food-list">
+                        <li>Lasagne</li>
+                        <li>Auflauf mit Huhn</li>
+                        <li>Vegetarischer Auflauf</li>
+                        <li>Brokkoli-Käse-Auflauf</li>
+                    
+                        
+                    </ul>
                 </div>
                 <!--Salad Slide-->
                 <div class="swiper-slide">
                     <img src="images/salad.jpg" alt="Salad" style="width:100px;height:auto;">
-                    <h3>Salads</h3>
-                    <ol start="18">
-                        <li>Caesar Salad</li>
-                        <li>Greek Salad</li>
-                        <li>Caprese Salad</li>
-                    </ol>
+                    <h3>Salate</h3>
+                    <ul class="food-list">
+                        <li>Caesar Salat</li>
+                        <li>Garten Salat</li>
+                        <li>Griechischer Salat</li>
+                        <li>Caprese Salat</li>
+                    </ul>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -76,7 +92,7 @@
     </ul>
 
 <script>
-new Swiper('.menu-swiper', {
+    new Swiper('.menu-swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
@@ -87,6 +103,17 @@ new Swiper('.menu-swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  let count = 1;
+  document.querySelectorAll('.food-list li').forEach(function(li) {
+    li.textContent = li.textContent.replace(/^\d+\.\s*/, '');
+    li.textContent = count + '. ' + li.textContent;
+    count++;
+  });
 });
 </script>
 </body>

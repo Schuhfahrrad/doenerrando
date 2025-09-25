@@ -92,7 +92,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background: rgba(40, 40, 40, 0.5);
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
@@ -101,10 +100,12 @@ ul {
 
 }
 
+
+
 /* Swiper styles */
 .swiper, .menu-swiper {
-    width: 350px;
-    height: 300px;
+    width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -116,4 +117,22 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* Existing code continues... */
+.suchfeld {
+    width: 80%;
+    margin: 0 auto 24px auto;
+    display: block;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.food-list {
+    text-align: left;
+    padding-left: 20px;
+    color: #e3e3e3;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+
+}
