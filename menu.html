@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" href="images/maskottchen.png">
+</head>
+
+<body>
+    <h1>Menu</h1>
+    <h2>Heisse Speisen</h2>
+    <img src="images/doenermann.jpeg" alt="Doener" style="width:200px;height:auto;">
+    <ul>
+        <div class="swiper menu-swiper" style="width:250px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/pizza.jpg" alt="Pizza" style="width:100px;height:auto;">
+                    <h3>Pizza</h3>
+                    <ol>
+                        <li>Margherita</li>
+                        <li>Salami</li>
+                        <li>Funghi</li>
+                        <li>Prosciutto</li>
+                        <li>Quattro Stagioni</li>
+                        <li>Diavolo</li>
+                        <li>Hawaii</li>
+                        <li>Vegetariana</li>
+                    </ol>
+                </div>
+                <!--Doener Slide-->
+                <div class="swiper-slide">
+                    <img src="images/Doener.jpeg" alt="Doener" style="width:100px;height:auto;">
+                    <h3>Doener</h3>
+                    <ol>
+                        <li>Doener Classic</li>
+                        <li>Doener Spezial</li>
+                        <li>Doener Vegetarisch</li>
+                        <li>Doener Dürüm</li>
+                        <li>Doener Box</li>
+                    </ol>
+                </div>
+                <!--Burger Slide-->
+                <div class="swiper-slide">
+                    <img src="images/burger.jpg" alt="Burger" style="width:100px;height:auto;">
+                    <h3>Burger</h3>
+                    <ol>
+                        <li>Classic Burger</li>
+                        <li>Cheeseburger</li>
+                        <li>Bacon Burger</li>
+                        <li>Chicken Burger</li>
+                        <li>Veggie Burger</li>
+                    </ol>
+                </div>
+                <!--Salad Slide-->
+                <div class="swiper-slide">
+                    <img src="images/salad.jpg" alt="Salad" style="width:100px;height:auto;">
+                    <h3>Salads</h3>
+                    <ol>
+                        <li>Caesar Salad</li>
+                        <li>Greek Salad</li>
+                        <li>Caprese Salad</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        
+    </ul>
+
+<script>
+new Swiper('.menu-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+</script>
+</body>
+</html>
