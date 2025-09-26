@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="icon" href="images/maskottchen.png">
@@ -14,9 +15,9 @@
 <body>
     <h1>Menu</h1>
     <h2>Heisse Speisen</h2>
-    <input class="suchfeld" type="text" id="searchBox" placeholder="Suche nach Koestlichkeiten..."
+    <input class="searchBox" type="text"  placeholder="Suche nach Koestlichkeiten..."
 
-    <img src="images/doenermann.jpeg" alt="Doener" style="width:200px;height:auto;">
+    <img src="images/doenermann.jpeg" alt="Doener">
     <ul>
         <div class="swiper menu-swiper" style="width:250px;">
             <div class="swiper-wrapper">
@@ -24,14 +25,14 @@
                     <img src="images/pizza.jpg" alt="Pizza" style="width:100px;height:auto;">
                     <h3>Pizza</h3>
                     <ul class="food-list">
-                        <li>Margherita</li>
-                        <li>Salami</li>
-                        <li>Funghi</li>
-                        <li>Prosciutto</li>
-                        <li>Quattro Stagioni</li>
-                        <li>Diavolo</li>
-                        <li>Hawaii</li>
-                        <li>Vegetariana</li>
+                        <li>Margherita <span class="price">€8.00</span></li>
+                        <li>Salami <span class="price">€9.00</span></li>
+                        <li>Funghi <span class="price">€8.50</span></li>
+                        <li>Prosciutto <span class="price">€10.00</span></li>
+                        <li>Quattro Stagioni <span class="price">€11.00</span></li>
+                        <li>Diavolo <span class="price">€9.50</span></li>
+                        <li>Hawaii <span class="price">€9.00</span></li>
+                        <li>Vegetariana <span class="price">€8.50</span></li>
                     </ul>
                 </div>
                 <!--Doener Slide-->
@@ -39,11 +40,11 @@
                     <img src="images/Doener.jpeg" alt="Doener" style="width:100px;height:auto;">
                     <h3>Doener</h3>
                     <ul class="food-list">
-                        <li>Doener Klassik</li>
-                        <li>Doener Spezial</li>
-                        <li>Doener Vegetarisch</li>
-                        <li>Doener Dürüm</li>
-                        <li>Doener Box</li>
+                        <li>Doener Klassik <span class="price">€7.00</span></li>
+                        <li>Doener Spezial <span class="price">€8.00</span></li>
+                        <li>Doener Vegetarisch <span class="price">€7.50</span></li>
+                        <li>Doener Dürüm <span class="price">€8.50</span></li>
+                        <li>Doener Box <span class="price">€9.00</span></li>
                     </ul>
                 </div>
                 <!--Burger Slide-->
@@ -51,11 +52,11 @@
                     <img src="images/burger.jpg" alt="Burger" style="width:100px;height:auto;">
                     <h3>Burger</h3>
                     <ul class="food-list">
-                        <li>Classic Burger</li>
-                        <li>Cheeseburger</li>
-                        <li>Bacon Burger</li>
-                        <li>Chicken Burger</li>
-                        <li>Veggie Burger</li>
+                        <li>Classic Burger <span class="price">€8.00</span></li>
+                        <li>Cheeseburger <span class="price">€8.50</span></li>
+                        <li>Bacon Burger <span class="price">€9.00</span></li>
+                        <li>Chicken Burger <span class="price">€9.50</span></li>
+                        <li>Veggie Burger <span class="price">€8.00</span></li>
                     </ul>
                 </div>
                 <!--Lasagne Slide-->
@@ -63,12 +64,11 @@
                     <img src="images/lasagne.jpg" alt="Lasagne" style="width:100px;height:auto;">
                     <h3>Ueberbackenes</h3>
                     <ul class="food-list">
-                        <li>Lasagne</li>
-                        <li>Auflauf mit Huhn</li>
-                        <li>Vegetarischer Auflauf</li>
-                        <li>Brokkoli-Käse-Auflauf</li>
-                    
-                        
+                        <li>Lasagne <span class="price">€9.00</span></li>
+                        <li>Auflauf mit Huhn <span class="price">€10.00</span></li>
+                        <li>Vegetarischer Auflauf <span class="price">€9.50</span></li>
+                        <li>Brokkoli-Käse-Auflauf <span class="price">€9.00</span></li>
+
                     </ul>
                 </div>
                 <!--Salad Slide-->
@@ -76,10 +76,10 @@
                     <img src="images/salad.jpg" alt="Salad" style="width:100px;height:auto;">
                     <h3>Salate</h3>
                     <ul class="food-list">
-                        <li>Caesar Salat</li>
-                        <li>Garten Salat</li>
-                        <li>Griechischer Salat</li>
-                        <li>Caprese Salat</li>
+                        <li>Caesar Salat <span class="price">€8.00</span></li>
+                        <li>Garten Salat <span class="price">€7.50</span></li>
+                        <li>Griechischer Salat <span class="price">€8.50</span></li>
+                        <li>Caprese Salat <span class="price">€8.00</span></li>
                     </ul>
                 </div>
             </div>

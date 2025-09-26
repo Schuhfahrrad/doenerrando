@@ -117,8 +117,8 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.suchfeld {
-    width: 80%;
+.searchBox {
+    width: 40%;
     margin: 0 auto 24px auto;
     display: block;
     border-radius: 10px;
@@ -135,4 +135,10 @@ ul {
 }
 
 
+.price {
+    float: right;
+    font-weight: 600;
+    color: #f0a500;
+    text-align: right;
 }
+
